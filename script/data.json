@@ -1,0 +1,14 @@
+[
+  {
+    "id": 0,
+    "url": "string",
+    "title": "string",
+    "title_english": "string",
+    "cover":"string",
+    "type": "TV",
+    "episodes": 0,
+    "status": "Currently Airing",
+    "aired": "string",
+    "score": 
+  }
+]
