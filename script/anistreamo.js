@@ -3,7 +3,7 @@ fetch('https://api.jikan.moe/v4/seasons/now')
   return response.json();
 })
 .then(function (anime){
-  let maindiv = document.getElementsByClassName('carousel-inner');
+  let maindiv = document.getElementById('carousel-inner');
 
   // const jsonToString = JSON.stringify(anime.data);
   
@@ -14,7 +14,7 @@ fetch('https://api.jikan.moe/v4/seasons/now')
       // console.log(coverImage.jpg[j]);
       let string = "<div class='carousel-item active'><img class='d-block w-100' src='"+coverImage.jpg[j]+"'alt=''/>";
       
-      maindiv.appendChild(string);
+      maindiv.append(string);
       
     }
    
