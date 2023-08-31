@@ -18,11 +18,11 @@ fetch('https://api.jikan.moe/v4/seasons/now')
 
      
       let img = document.createElement('img');
-      img.setAttribute('class','mySlides');
+      img.setAttribute('id','mySlides');
       img.setAttribute('src','');
       img.setAttribute('alt','');
       
-      img.src = coverImage.jpg[j].image_url;
+      img.src = coverImage.jpg[j];
       
       maindiv.append(img);
       
@@ -40,12 +40,12 @@ carousel();
 
 function carousel() {
   var k;
-  var x = document.querySelectorAll(".mySlides");
+  var x = document.querySelectorAll("#mySlides");
   for (k = 0; k < x.length; k++) {
-    x[k].style.display = "none";
+    x[k].css("display","none");
   }
   slideIndex++;
   if (slideIndex > x.length) {slideIndex = 1}
-  x[slideIndex-1].style.display = "block";
+  x[slideIndex-1].css("display","block");
   setTimeout(carousel, 2000); // Change image every 2 seconds
 }
