@@ -3,7 +3,7 @@ fetch('https://api.jikan.moe/v4/seasons/now')
   return response.json();
 })
 .then(function (anime){
-  var maindiv = document.querySelector('#slideshow');
+  var maindiv = document.querySelector('.carousel-inner');
 
   // const jsonToString = JSON.stringify(anime.data);
   
