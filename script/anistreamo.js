@@ -24,8 +24,8 @@ fetch('https://api.jikan.moe/v4/seasons/now')
       
       img.src = coverImage.jpg[j];
       
-      div.append(img);
-      maindiv.append(div);
+      div.appendChild(img);
+      maindiv.appendChild(div);
       
     }
    
