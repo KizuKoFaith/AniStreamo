@@ -23,7 +23,7 @@ fetch('https://api.jikan.moe/v4/seasons/now')
       img.setAttribute('src','');
       img.setAttribute('alt','');
       
-      img.src = coverImage.jpg[j];
+      img.src = coverImage.jpg[j].image_url;
       
       maindiv.append(img);
       
