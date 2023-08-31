@@ -3,7 +3,7 @@ fetch('https://api.jikan.moe/v4/seasons/now')
   return response.json();
 })
 .then(function (anime){
-  var maindiv = document.querySelector('.carousel-inner');
+  var maindiv = document.querySelector('#slideshow');
 
   // const jsonToString = JSON.stringify(anime.data);
   
@@ -16,17 +16,15 @@ fetch('https://api.jikan.moe/v4/seasons/now')
 //       
 //       maindiv.append(string);
 
-      let div = document.createElement('div');
-      div.setAttribute('class','carousel-item active');
+     
       let img = document.createElement('img');
-      img.setAttribute('class','d-block w-100');
+      img.setAttribute('class','mySlide');
       img.setAttribute('src','');
       img.setAttribute('alt','');
       
       img.src = coverImage.jpg[j];
       
-      div.append(img);
-      maindiv.append(div);
+      maindiv.append(img);
       
     }
    
