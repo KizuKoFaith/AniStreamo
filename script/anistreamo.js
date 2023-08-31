@@ -39,10 +39,10 @@ var slideIndex = 0;
 carousel();
 
 function carousel() {
-  var i;
+  var k;
   var x = document.querySelectorAll(".mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+  for (k = 0; k < x.length; k++) {
+    x[k].style.display = "none";
   }
   slideIndex++;
   if (slideIndex > x.length) {slideIndex = 1}
