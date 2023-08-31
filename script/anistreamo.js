@@ -11,10 +11,21 @@ fetch('https://api.jikan.moe/v4/seasons/now')
     let coverImage = anime.data[i].images;
     //console.log(coverImage.jpg)
     for(let j in coverImage.jpg){
-      console.log(coverImage.jpg[j]);
-      let string = "<div class='carousel-item active'><img class='d-block w-100' src='"+coverImage.jpg[j]+"'alt=''/>";
+      // console.log(coverImage.jpg[j]);
+      // let string = "<div class='carousel-item active'><img class='d-block w-100' src='"+coverImage.jpg[j]+"'alt=''/>";
+//       
+//       maindiv.append(string);
+
+      let div = document.createElement('div').setAttribute('class','carousel-item active');
+      let img = document.createElement('img');
+      img.setAttribute('class','d-block w-100');
+      img.setAttribute('src','');
+      img.setAttribute('alt','');
       
-      maindiv.append(string);
+      img.src = coverImage.jpg[j];
+      
+      div.append(img);
+      maindiv.append(div);
       
     }
    
