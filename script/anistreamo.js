@@ -18,7 +18,7 @@ fetch('https://api.jikan.moe/v4/seasons/now')
 
      
       let img = document.createElement('img');
-      img.setAttribute('class','mySlide');
+      img.setAttribute('class','mySlides');
       img.setAttribute('src','');
       img.setAttribute('alt','');
       
