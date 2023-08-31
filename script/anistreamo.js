@@ -17,7 +17,7 @@ fetch('https://api.jikan.moe/v4/seasons/now')
 //       maindiv.append(string);
 
       let div = document.createElement('div');
-      div.setAttribute('class','carousel-item');
+      div.setAttribute('class','carousel-item active');
       let img = document.createElement('img');
       img.setAttribute('class','d-block w-100');
       img.setAttribute('src','');
