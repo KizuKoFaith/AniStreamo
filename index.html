@@ -53,21 +53,21 @@
       </div>
     </div>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="/script/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/script/anistreamo.js"></script>
     <script>
-    document.ready(function(){
+    $(document).ready(function(){
       var slideIndex = 0;
 
       var k;
-      var x = $('#mySlides');
+      var x = document.querySelectorAll('#mySlides');
       for (k = 0; k < x.length; k++) {
-        x[k].css("display","none");
+        x[k].style.display = 'none';
       }
       slideIndex++;
       if (slideIndex > x.length) {slideIndex = 1}
-      x[slideIndex-1].css("display","block");
+      x[slideIndex-1].style.display = 'block';
       setTimeout(carousel, 2000); // Change image every 2 seconds
     });
     </script>
